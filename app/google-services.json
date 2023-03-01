@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "243436828947",
+    "firebase_url": "https://learning-ce755-default-rtdb.firebaseio.com",
+    "project_id": "learning-ce755",
+    "storage_bucket": "learning-ce755.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:243436828947:android:69e02e4961b7e97845c2e6",
+        "android_client_info": {
+          "package_name": "com.javahelps.com.javahelps.interactive_e_learning_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "243436828947-etve25ludrfo60g3d5auui8s8j7tboq2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDzhqAh2DiqJFOJBzfyFofmt8Y7UVtXBpk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "243436828947-etve25ludrfo60g3d5auui8s8j7tboq2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

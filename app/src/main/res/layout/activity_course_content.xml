@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+        <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#03A9F4"
+            android:orientation="vertical"
+            tools:context="Courses.CourseContent">
+
+    <LinearLayout
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/videoText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/backbutton"
+            android:layout_width="40dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="16dp"
+            android:clickable="true"
+            android:src="@drawable/ic_baseline_arrow_back_24" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_marginTop="16dp"
+            app:srcCompat="@drawable/head_icon" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/videoText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="#1C1C1C"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/head"
+        app:layout_constraintBottom_toTopOf="@+id/content"/>
+
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="402dp"
+        android:layout_height="494dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/videoText">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="153dp"
+            android:padding="5dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/Prof_details"
+                android:layout_width="110dp"
+                android:layout_height="105dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="8dp"
+                app:cardBackgroundColor="@color/gray"
+                app:cardCornerRadius="30dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/NotesSection"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        android:layout_width="106dp"
+                        android:layout_height="74dp"
+                        android:padding="16dp"
+                        android:src="@drawable/professor_details1122" />
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="106dp"
+                        android:layout_height="34dp"
+                        android:text="Professor details"
+                        android:textAlignment="center"
+                        android:textColor="#070707"
+                        android:textSize="12sp"
+                        tools:textStyle="bold" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/NotesSection"
+                android:layout_width="110dp"
+                android:layout_height="105dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="24dp"
+                app:cardBackgroundColor="@color/gray"
+                app:cardCornerRadius="30dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/Prof_details"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageView10"
+                        android:layout_width="106dp"
+                        android:layout_height="74dp"
+                        android:padding="16dp"
+                        android:src="@drawable/add_notes_bro" />
+
+                    <TextView
+                        android:id="@+id/textView10"
+                        android:layout_width="106dp"
+                        android:layout_height="34dp"
+                        android:text="Notes Section"
+                        android:textAlignment="center"
+                        android:textColor="#070707"
+                        android:textSize="12sp"
+                        tools:textStyle="bold" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="148dp"
+            android:padding="5dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/LectureVideo"
+                android:layout_width="110dp"
+                android:layout_height="105dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="8dp"
+                app:cardBackgroundColor="@color/gray"
+                app:cardCornerRadius="30dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/DiscussionBoard"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageView11"
+                        android:layout_width="106dp"
+                        android:layout_height="63dp"
+                        android:padding="16dp"
+                        android:src="@drawable/lecturevideo" />
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="106dp"
+                        android:layout_height="30dp"
+                        android:text="Lecture Video Section"
+                        android:textAlignment="center"
+                        android:textColor="#070707"
+                        android:textSize="12sp"
+                        tools:textStyle="bold" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/DiscussionBoard"
+                android:layout_width="110dp"
+                android:layout_height="105dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="24dp"
+                app:cardBackgroundColor="@color/gray"
+                app:cardCornerRadius="30dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/LectureVideo"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageView12"
+                        android:layout_width="106dp"
+                        android:layout_height="74dp"
+                        android:padding="16dp"
+                        android:src="@drawable/discussionboard" />
+
+                    <TextView
+                        android:id="@+id/textView12"
+                        android:layout_width="106dp"
+                        android:layout_height="34dp"
+                        android:text="Discussion Board"
+                        android:textAlignment="center"
+                        android:textColor="#070707"
+                        android:textSize="12sp"
+                        tools:textStyle="bold" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="143dp"
+            android:padding="16dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/HelpingMaterial"
+                android:layout_width="110dp"
+                android:layout_height="105dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="8dp"
+                app:cardBackgroundColor="@color/gray"
+                app:cardCornerRadius="30dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageView13"
+                        android:layout_width="106dp"
+                        android:layout_height="74dp"
+                        android:padding="16dp"
+                        android:src="@drawable/helpingmaterial" />
+
+                    <TextView
+                        android:id="@+id/textView13"
+                        android:layout_width="106dp"
+                        android:layout_height="34dp"
+                        android:text="Helping Material"
+                        android:textAlignment="center"
+                        android:textColor="#070707"
+                        android:textSize="12sp"
+                        tools:textStyle="bold" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

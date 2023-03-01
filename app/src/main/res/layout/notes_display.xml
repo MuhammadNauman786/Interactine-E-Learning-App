@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#03A9F4"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:paddingRight="8dp">
+
+        <ImageView
+            android:id="@+id/backbutton4"
+            android:layout_width="40dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="16dp"
+            android:clickable="true"
+            android:src="@drawable/ic_baseline_arrow_back_24" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_marginTop="16dp"
+            app:srcCompat="@drawable/head_icon" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textTitleOfNotes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="#090909"
+        android:textSize="24sp"
+        tools:textStyle="bold" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="10dp"
+            app:cardCornerRadius="50dp">
+
+            <TextView
+                android:id="@+id/textOfNotes"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#777575"
+                android:padding="30dp"
+                android:text="TextView"
+                android:textSize="20sp" />
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+</LinearLayout>

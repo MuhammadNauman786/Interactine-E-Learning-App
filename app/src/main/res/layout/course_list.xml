@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/round_corner"
+    app:circularflow_defaultRadius="30dp"
+    app:layout_constraintCircleRadius="30dp">
+
+    <TextView
+        android:id="@+id/course_name"
+        android:layout_width="209dp"
+        android:layout_height="39dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="20dp"
+        android:layout_weight="1"
+        android:text="FileName"
+        android:textColor="#090909"
+        android:textSize="16sp"
+        tools:layout_editor_absoluteY="43dp"
+        tools:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/course_image"
+        android:layout_width="138dp"
+        android:layout_height="79dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="36dp"
+        android:layout_toStartOf="@+id/course_name"
+        app:srcCompat="@drawable/online_course" />
+</RelativeLayout>
